@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Application Submitted";
+}
+
+@model DateMe.Models.ApplicationResponse
+
+@if (Model.Edited == true)
+{
+<h2> Application recieved. Thank you for submitting the edited movie, @Model.Title.</h2>
+<h3>
+    Keep watching movies!
+</h3>
+}
+else
+{
+    <h2>
+        Application recieved. Thank you for submitting the unedited movie, @Model.Title.
+    </h2>
+    <h3>
+        Keep watching movies!
+    </h3>
+
+}
